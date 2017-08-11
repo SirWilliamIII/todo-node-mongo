@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SirWilliamIII/todo-node-mongo#readme",
   "dependencies": {
+    "assert": "^1.4.1",
     "gitignore": "^0.6.0",
     "mongodb": "^2.2.31"
   }
