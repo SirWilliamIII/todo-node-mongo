@@ -1,0 +1,19 @@
+{
+  "name": "todos-node-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirWilliamIII/todo-node-mongo.git"
+  },
+  "author": "Will Carpenter <willcarpenteriii@gmail.com> (http://sirwilliamthethird.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirWilliamIII/todo-node-mongo/issues"
+  },
+  "homepage": "https://github.com/SirWilliamIII/todo-node-mongo#readme"
+}
