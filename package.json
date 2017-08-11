@@ -19,6 +19,7 @@
   "dependencies": {
     "assert": "^1.4.1",
     "gitignore": "^0.6.0",
-    "mongodb": "^2.2.31"
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.6"
   }
 }
