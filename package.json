@@ -18,6 +18,8 @@
   "homepage": "https://github.com/SirWilliamIII/todo-node-mongo#readme",
   "dependencies": {
     "assert": "^1.4.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
     "gitignore": "^0.6.0",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.6"
