@@ -1,13 +1,15 @@
 const express      = require('express'),
       bodyParser   = require('body-parser'),
-      _            = require('lodash'),
-      { ObjectId } = require('mongodb')
+      { ObjectId } = require('mongodb'),
+      _            = require('lodash')
 
 const { mongoose } = require('./db/mongoose'),
       { Todo }     = require('./models/todo'),
       { User }     = require('./models/user')
 
 const app = express()
+
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
@@ -55,6 +57,6 @@ app.post('/users', (req, res) => {
 	})
 })
 
-app.listen(3000, () => {
-	console.log('Started on 3000')
+app.listen(port, () => {
+	console.log(`Started on port ${port}`)
 })
