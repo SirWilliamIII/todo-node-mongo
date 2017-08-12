@@ -29,6 +29,10 @@ app.get('/todos', (req, res) => {
 	})
 })
 
+app.post('/users', (req, res) => {
+
+})
+
 app.listen(3000, () => {
 	console.log('Started on 3000')
 })
