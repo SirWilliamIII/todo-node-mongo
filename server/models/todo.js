@@ -7,6 +7,11 @@ const Todo = mongoose.model('Todo', {
 		minlength: 1,
 		trim: true
 	},
+	rating: {
+		type: Number,
+		minlength: 1,
+		default: 1
+	},
 	completed: {
 		type: Boolean,
 		default: false
