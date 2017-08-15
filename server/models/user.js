@@ -42,8 +42,8 @@ UserSchema.methods.toJSON = function () {
 UserSchema.methods.generateAuthToken = function () {
 	const user = this
 	const access = 'auth'
-	const salt = 'titties'
-	const token = jwt.sign({_id: user._id.toHexString(), access} , salt).toString()
+	const secret = 'titties'
+	const token = jwt.sign({_id: user._id.toHexString(), access} , secret).toString()
 
 	user.tokens.push({
 		access,

@@ -6,7 +6,7 @@ const { mongoose } = require('./db/mongoose'),
       { Todo }     = require('./models/todo'),
       { User }     = require('./models/user')
 
-const ObjectId = require('mongodb')
+const { ObjectId } = require('mongodb')
 
 const app = express()
 
@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
-app.post('/todos', (req, res) => {
+app.post(/(todos?)/, (req, res) => {
 	const todo = new Todo({
 		text: req.body.text
 	})
@@ -85,7 +85,7 @@ app.patch('/todos/:id', (req, res) => {
 		})
 })
 
-app.post('/users', (req, res) => {
+app.post('/user', (req, res) => {
 	const body = _.pick(req.body, ['email', 'password'])
 	const user = new User(body)
 
